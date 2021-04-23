@@ -16,11 +16,11 @@ import com.cotemig.SpringBDController.service.AlunoService;
 public class SpringBdController {
 	
 	@Autowired
-	private AlunoService alunoService;
+	private AlunoService serviceAluno
 	
 	@RequestMapping(value = "/insert", method = RequestMethod.GET)
 	public ModelAndView insert() {
-		return new ModelAndView("insert", "aluno", new Aluno());
+		return new ModelAndView("insertAluno", "aluno", new Aluno());
 	}
 	
 	@RequestMapping(value = "/insert", method = RequestMethod.POST)
