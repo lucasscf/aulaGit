@@ -16,6 +16,10 @@ public class Aluno {
 	
 	private String email;
 
+	private String endereco;
+
+	private String tel;
+
 	public Integer getId() {
 		return id;
 	}
